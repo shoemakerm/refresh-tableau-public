@@ -43,6 +43,7 @@ WScript.Sleep 10000
 'Turn NumLock back on because it gets turned off for some reason
 WScript.Sleep 2000
 Shell_Object.SendKeys "{NUMLOCK}"
+WScript.Sleep 1000
 
 'Close Tableau App
 Shell_Object.AppActivate("Tableau - Covid")
