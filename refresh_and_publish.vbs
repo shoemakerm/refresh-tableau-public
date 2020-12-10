@@ -12,7 +12,9 @@ Shell_Object.Run App, 9
 WScript.Sleep 40000
 Shell_Object.AppActivate("Tableau - Covid")
 WScript.Sleep 2000
+
 'Send keystrokes with waits as needed.
+
 'Refresh extracts
 Shell_Object.SendKeys "%d"
 WScript.Sleep 1000
@@ -22,6 +24,7 @@ Shell_Object.SendKeys "{ENTER}"
 WScript.Sleep 12000
 Shell_Object.SendKeys "{ENTER}"
 WScript.Sleep 2000
+
 'Publish workbook
 Shell_Object.SendKeys "%s"
 WScript.Sleep 1000
@@ -40,6 +43,7 @@ WScript.Sleep 10000
 'Turn NumLock back on because it gets turned off for some reason
 WScript.Sleep 2000
 Shell_Object.SendKeys "{NUMLOCK}"
+
 'Close Tableau App
 Shell_Object.AppActivate("Tableau - Covid")
 WScript.Sleep 2000
